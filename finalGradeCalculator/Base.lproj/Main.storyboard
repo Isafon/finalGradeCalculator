@@ -88,6 +88,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qzj-ck-hUq"/>
+                                    <action selector="calculateButtonBackgroundChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOO-lU-HvN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRE-yd-cfN">
@@ -103,6 +104,7 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="lRE-yd-cfN" id="SXV-fH-jHv"/>
+                        <outlet property="background" destination="8bC-Xf-vdC" id="bxP-n1-5ga"/>
                         <outlet property="currentGradeTextField" destination="iG3-Er-uSv" id="GSn-YJ-Auh"/>
                         <outlet property="desiredGradeTextField" destination="ilG-io-YEw" id="2SW-ba-mLg"/>
                         <outlet property="examPercentWorthTextField" destination="MCS-7S-5YG" id="Bar-Mb-9og"/>

@@ -18,6 +18,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var answerLabel: UILabel!
     
 
+    
+  
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        answerLabel.text = "Answer"
+    }
+    
     @IBAction func calculateButton(_ sender: UIButton) {
         
         let currentGradeString = currentGradeTextField.text ?? ""
@@ -36,16 +47,13 @@ class ViewController: UIViewController {
         answerLabel.text = calculate as? String
         answerLabel.text = "You need a \(resultPercent)% on the exam"
         
-        
+        if (resultPercent < 100) {
+            
+        } else {
+          
+        }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        answerLabel.text = "Answer"
-    }
 
-
+    
 }
-
