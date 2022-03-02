@@ -24,14 +24,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desired Grade:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn5-km-Onb">
-                                <rect key="frame" x="35" y="304" width="179" height="38"/>
+                                <rect key="frame" x="35" y="229" width="179" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exam % Worth:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjB-qp-e36">
-                                <rect key="frame" x="35" y="448" width="185" height="38"/>
+                                <rect key="frame" x="35" y="299" width="185" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="31"/>
                                 <nil key="textColor"/>
@@ -61,20 +61,22 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilG-io-YEw">
-                                <rect key="frame" x="247" y="306" width="146" height="34"/>
+                                <rect key="frame" x="247" y="231" width="146" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCS-7S-5YG">
-                                <rect key="frame" x="247" y="450" width="146" height="34"/>
+                                <rect key="frame" x="247" y="301" width="146" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2d-fQ-luZ">
-                                <rect key="frame" x="35" y="522" width="185" height="31"/>
+                                <rect key="frame" x="35" y="549" width="185" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06293170154094696" green="0.086041651666164398" blue="0.96398645639419556" alpha="0.4008822279" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.06293170154094696" green="0.086041651666164398" blue="0.96398645639419556" alpha="0.4008822279" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" subtitle="">
                                     <attributedString key="attributedTitle">
@@ -88,26 +90,51 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qzj-ck-hUq"/>
-                                    <action selector="calculateButtonBackgroundChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOO-lU-HvN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRE-yd-cfN">
-                                <rect key="frame" x="35" y="570" width="358" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRE-yd-cfN">
+                                <rect key="frame" x="0.0" y="568" width="428" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-va-w1c">
+                                <rect key="frame" x="35" y="708" width="358" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FzA-2E-qdb">
+                                <rect key="frame" x="35" y="364" width="358" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                    <segment title="D"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.06293170154094696" green="0.086041651666164398" blue="0.96398645639419556" alpha="0.26881377551020408" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dd4-MT-c6f">
+                                <rect key="frame" x="0.0" y="418" width="428" height="116"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06293170154094696" green="0.086041651666164398" blue="0.96398645639419556" alpha="0.61538052721088432" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.5115501880645752" green="0.91948848962783813" blue="0.22507897019386292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.84360939264297485" green="0.94754916429519653" blue="0.95706576108932495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="lRE-yd-cfN" id="SXV-fH-jHv"/>
-                        <outlet property="background" destination="8bC-Xf-vdC" id="bxP-n1-5ga"/>
                         <outlet property="currentGradeTextField" destination="iG3-Er-uSv" id="GSn-YJ-Auh"/>
                         <outlet property="desiredGradeTextField" destination="ilG-io-YEw" id="2SW-ba-mLg"/>
                         <outlet property="examPercentWorthTextField" destination="MCS-7S-5YG" id="Bar-Mb-9og"/>
+                        <outlet property="helpLabel" destination="hVd-va-w1c" id="f3R-80-HQg"/>
+                        <outlet property="segmentedControllerGrades" destination="FzA-2E-qdb" id="4ee-G6-kFu"/>
+                        <outlet property="viewPickerGrades" destination="dd4-MT-c6f" id="epa-Df-y5F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

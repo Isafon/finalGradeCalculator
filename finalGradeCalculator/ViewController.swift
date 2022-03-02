@@ -7,8 +7,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    
+
+    
+
+//Segmented Controller
+    @IBOutlet weak var segmentedControllerGrades: UISegmentedControl!
+    
+    
+    
+//View Picker
+    @IBOutlet weak var viewPickerGrades: UIPickerView!
+    
+    var grades = ["A", "B", "C", "D"]
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return grades.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        grades[row]
+    }
+    
+//EVERYTHING
     @IBOutlet weak var currentGradeTextField: UITextField!
     
     @IBOutlet weak var desiredGradeTextField: UITextField!
@@ -16,8 +43,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var examPercentWorthTextField: UITextField!
     
     @IBOutlet weak var answerLabel: UILabel!
-    
 
+    @IBOutlet weak var helpLabel: UILabel!
     
   
 
@@ -25,6 +52,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        viewPickerGrades.dataSource = self
+        viewPickerGrades.delegate = self
         
         answerLabel.text = "Answer"
     }
@@ -48,12 +77,16 @@ class ViewController: UIViewController {
         answerLabel.text = "You need a \(resultPercent)% on the exam"
         
         if (resultPercent < 100) {
-            
+            helpLabel.text = "Keep up the good work"
+        
         } else {
-          
+            helpLabel.text = "You should ask your teacher for help."
         }
+        
+        
     }
     
 
+    
     
 }
