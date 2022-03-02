@@ -116,12 +116,15 @@
                                     <segment title="D"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.06293170154094696" green="0.086041651666164398" blue="0.96398645639419556" alpha="0.26881377551020408" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentIndexChanges:" destination="BYZ-38-t0r" eventType="valueChanged" id="pUO-tj-ogi"/>
+                                </connections>
                             </segmentedControl>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dd4-MT-c6f">
                                 <rect key="frame" x="0.0" y="418" width="428" height="116"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.06293170154094696" green="0.086041651666164398" blue="0.96398645639419556" alpha="0.61538052721088432" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.5115501880645752" green="0.91948848962783813" blue="0.22507897019386292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.06293170154094696" green="0.086041651666164398" blue="0.96398645639419556" alpha="0.37752444727891155" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -143,6 +146,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

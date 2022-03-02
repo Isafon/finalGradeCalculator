@@ -35,6 +35,26 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         grades[row]
     }
     
+    internal func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        view.endEditing(true)
+        
+        switch row {
+            
+        case 0:
+            examPercentWorthTextField.text = "95"
+        case 1:
+            examPercentWorthTextField.text = "85"
+        case 2:
+            examPercentWorthTextField.text = "75"
+        case 3:
+            examPercentWorthTextField.text = "65"
+        
+        default: break
+        }
+    }
+
+    
 //EVERYTHING
     @IBOutlet weak var currentGradeTextField: UITextField!
     
@@ -46,8 +66,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @IBOutlet weak var helpLabel: UILabel!
     
-  
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,7 +104,25 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
     }
     
+    @IBAction func segmentIndexChanges(_ sender: UISegmentedControl) {
+        
+        switch  segmentedControllerGrades.selectedSegmentIndex
+        {
+        case 0:
+            examPercentWorthTextField.text = "95"
+        case 1:
+            examPercentWorthTextField.text = "85"
+        case 2:
+            examPercentWorthTextField.text = "75"
+        case 3:
+            examPercentWorthTextField.text = "65"
+            
+        default: break
+            
+        }
 
+    }
+    
     
     
 }
