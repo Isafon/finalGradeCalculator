@@ -96,9 +96,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         if (resultPercent < 100) {
             helpLabel.text = "Keep up the good work"
+            self.view.backgroundColor = .green
         
         } else {
             helpLabel.text = "You should ask your teacher for help."
+            self.view.backgroundColor = .red
         }
         
         
